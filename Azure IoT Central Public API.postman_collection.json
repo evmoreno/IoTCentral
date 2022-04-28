@@ -1,0 +1,2885 @@
+{
+	"info": {
+		"_postman_id": "c9745364-d5d6-4e05-bae1-f194ae64a6f1",
+		"name": "Azure IoT Central Public API",
+		"description": "[Azure IoT Central REST API | Microsoft Docs](https://docs.microsoft.com/en-us/rest/api/iotcentral/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Tokens",
+			"item": [
+				{
+					"name": "Create API Token",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/apiTokens/{tokenId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"apiTokens",
+								"{tokenId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get API Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/apiTokens/{tokenId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"apiTokens",
+								"{tokenId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List API Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/apiTokens?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"apiTokens"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete API Token",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/apiTokens/{tokenId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"apiTokens",
+								"{tokenId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "API Tokens - Create, read, delete access tokens used to interact with the IoT Central public APIs",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Destinations",
+			"item": [
+				{
+					"name": "Create Destination",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/destinations/{destinationId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"destinations",
+								"{destinationId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Destination ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/destinations/{destinationId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"destinations",
+								"{destinationId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Destinations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/destinations?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"destinations"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Destination Exports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https:/{sudomain}.{basedomain}/api/dataExport/destinations/{destinationId}/exports?api-version=1.1-preview",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"{sudomain}.{basedomain}",
+								"api",
+								"dataExport",
+								"destinations",
+								"{destinationId}",
+								"exports"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Destination",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/destinations/{destinationId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"destinations",
+								"{destinationId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Destinations",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/destinations/{destinationId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"destinations",
+								"{destinationId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Manage destinations utilized to configure data exports within your IoT Central application",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Device Templates",
+			"item": [
+				{
+					"name": "Create Device Template",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/deviceTemplates/{deviceTemplateId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"deviceTemplates",
+								"{deviceTemplateId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Device Template",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/deviceTemplates/{deviceTemplateId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"deviceTemplates",
+								"{deviceTemplateId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Device Templates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/deviceTemplates?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"deviceTemplates"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Device Template",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/deviceTemplates/{deviceTemplateId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"deviceTemplates",
+								"{deviceTemplateId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Template",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/deviceTemplates/{deviceTemplateId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"deviceTemplates",
+								"{deviceTemplateId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Devices",
+			"item": [
+				{
+					"name": "Create Device",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Attestation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/attestation?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"attestation"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Device",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Attestation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/attestation?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"attestation"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Command History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/commands/{commandName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"commands",
+								"{commandName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Component Command History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/components/{componentName}/commands/{commandName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"components",
+								"{componentName}",
+								"commands",
+								"{commandName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Component Properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/components/{componentName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"components",
+								"{componentName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Component Telemetry Value",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/components/{componentName}/telemetry/{telemetryName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"components",
+								"{componentName}",
+								"telemetry",
+								"{telemetryName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Device Credentials",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/credentials?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"credentials"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Module Command History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/commands/{commandName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"commands",
+								"{commandName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Module Component Command History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/components/{componentName}/commands/{commandName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"components",
+								"{componentName}",
+								"commands",
+								"{commandName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Module Properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/components/{componentName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"components",
+								"{componentName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Module Telemetry Value",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/components/{componentName}/telemetry/{telemetryName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"components",
+								"{componentName}",
+								"telemetry",
+								"{telemetryName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Module Properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Module Telemetry Value",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/telemetry/{telemetryName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"telemetry",
+								"{telemetryName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Device Property",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Device Telemetry Value",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/telemetry/{telemetryName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"telemetry",
+								"{telemetryName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Devices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Device Component",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/components?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"components"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Device Module Components",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/components?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"components"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Device Modules",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Device",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}.{baseDomain}/api/devices/{deviceId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}",
+								"{baseDomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Device Attestation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/attestation?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"attestation"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Component Properties",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/components/{componentName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"components",
+								"{componentName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replace Device Module Component Properties",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/components/{componentName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"components",
+								"{componentName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replace Device Module Properties",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replace Device Properties",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Run Device Command",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/commands/{commandName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"commands",
+								"{commandName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Run Device Component Command",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/components/{componentName}/commands/{commandName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"components",
+								"{componentName}",
+								"commands",
+								"{commandName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Run Device Module Command",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/commands/{commandName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"commands",
+								"{commandName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Run Device Module Component Command",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/components/{componentName}/commands/{commandName}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"components",
+								"{componentName}",
+								"commands",
+								"{commandName}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Attestation",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/attestation?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"attestation"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Property Components",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/components/{componentName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"components",
+								"{componentName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Module Component Properties",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/components/{componentName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"components",
+								"{componentName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Module Properties",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/modules/{moduleName}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"modules",
+								"{moduleName}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Properties",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/devices/{deviceId}/properties?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"devices",
+								"{deviceId}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Get information about and manage devices and IoT Edge modules in your IoT Central application",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Device Groups",
+			"item": [
+				{
+					"name": "List Device Groups",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/deviceGroups?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"deviceGroups"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "List the set of device groups within your application",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Exports",
+			"item": [
+				{
+					"name": "Create an Export",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/exports/{exportId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"exports",
+								"{exportId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Export ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}}/api/dataExport/exports/{exportId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"exports",
+								"{exportId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Exports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/exports?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"exports"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Export Destinations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/exports/{exportId}/destinations?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"exports",
+								"{exportId}",
+								"destinations"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Export",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/exports/{exportId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"exports",
+								"{exportId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Export",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/dataExport/exports/{exportId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"dataExport",
+								"exports",
+								"{exportId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Manage data export definitions within your IoT Central application",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "File Upload",
+			"item": [
+				{
+					"name": "Create File Upload",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/fileUploads?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"fileUploads"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get File Upload",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/fileUploads?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"fileUploads"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete File Upload",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/fileUploads?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"fileUploads"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a File Upload",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/fileUploads?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"fileUploads"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Update, retrieve and delete file upload configurations",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "Create Job",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/jobs/{jobId}?api-version=1.1-preview\n",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"{jobId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/jobs/{jobId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"{jobId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/jobs/{jobId}/devices?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"{jobId}",
+								"devices"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/jobs?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rerun Job",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/jobs/{jobId}/rerun/{rerunId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"{jobId}",
+								"rerun",
+								"{rerunId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resume Job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/jobs/{jobId}/resume?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"{jobId}",
+								"resume"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stop a Job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/jobs/{jobId}/stop?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"{jobId}",
+								"stop"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Get information about and manage jobs within your application",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Organisations",
+			"item": [
+				{
+					"name": "Create an Organisation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/organizations/{organizationId}?api-version=1.1-preview\n",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"organizations",
+								"{organizationId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organisation ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/organizations/{organizationId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"organizations",
+								"{organizationId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Organisations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/organizations?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"organizations"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Organisation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/organizations/{organizationId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"organizations",
+								"{organizationId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update an Organisation",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/organizations/{organizationId}?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"organizations",
+								"{organizationId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Create, read, delete and list organizations within your IoT Central application",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Query",
+			"item": [
+				{
+					"name": "Run Query",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/query?api-version=1.1-preview",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"query"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.1-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Query for devices or device data from within your IoT Central application using IoT Central Query Language",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Get Roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/roles/{roleId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"{roleId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/roles?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"roles"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "List roles within your application",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create a User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/users/{userId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{userId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/users/{userId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{userId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/users?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/users/{userId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{userId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://{sudomain}.{basedomain}/api/users/{userId}?api-version=1.0",
+							"protocol": "https",
+							"host": [
+								"{sudomain}",
+								"{basedomain}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{userId}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Add, update, and remove users within your application",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "SharedAccessSignature sr=2696aa12-3386-4faf-8280-798f8a30f4b2&sig=cCdrpLdDFbbF3PJpVQuGlLlZFz0FIT3Wh5iskGiZ4T0%3D&skn=admin&se=1681528711090",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
